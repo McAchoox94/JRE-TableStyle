@@ -1,0 +1,164 @@
+<div class="w-90 m-auto">
+  <div class="d-flex justify-content-between my-5">
+    <div>
+      <h5 class="d-inline mr-3">Contributions </h5>
+      <span><i class="fas fa-map-marker-alt text-primary"></i><span class="text-muted"> Tanger-Tétouan-Al
+          Hoceíma</span></span>
+      <p class="text-muted mt-2">32 Total</p>
+    </div>
+
+    <div class="d-flex flex-row flex-wrap ">
+      <div class="contribution-box bg-yellow mb-3 mx-3">
+        <div><i class="fas fa-image text-white"></i><span class="text-white">&nbsp;&nbsp;Reportage photo</span></div>
+        <div class="d-none d-sm-block text-right photo-contribution">
+        </div>
+        <span class="custom-number text-right">14</span>
+      </div>
+      <div class="contribution-box bg-blue mb-3 mx-3">
+        <div><i class="fas fa-video text-white"></i><span class="text-white">&nbsp;&nbsp;Reportage vidéo</span></div>
+
+        <div class="d-none d-sm-block text-right video-contribution">
+        </div>
+        <span class="custom-number">10</span>
+
+      </div>
+      <div class="contribution-box bg-green mb-3 mx-3">
+        <div><i class="fas fa-copy text-white"></i><span class="text-white">&nbsp;&nbsp;Reportage écrit</span></div>
+        <div class="d-none d-sm-block text-right copy-contribution">
+        </div>
+        <span class="custom-number">8</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-white row justify-content-center justify-content-md-between align-items-center px-2 py-5 rounded">
+    <div class="font-bold">
+      Filter les contributions par:
+    </div>
+    <div class="col-lg-3 my-3 my-lg-0">
+      <select class="form-control left-right-top-border-none shadow-none text-muted">
+        <option>Reportage</option>
+        <option>Reportage 2</option>
+        <option>Reportage 3</option>
+      </select>
+    </div>
+    <div class="col-lg-3 my-3 my-lg-0">
+      <select class="form-control left-right-top-border-none shadow-none text-muted">
+        <option>Type d'établissement</option>
+        <option>Type d'établissement 2</option>
+        <option>Type d'établissement 3</option>
+      </select>
+    </div>
+    <div class="col-lg-3 my-3 my-lg-0">
+      <select class="form-control left-right-top-border-none shadow-none text-muted">
+        <option>Direction régionale</option>
+        <option>Direction régionale 2</option>
+        <option>Direction régionale 3</option>
+      </select>
+    </div>
+  </div>
+
+
+  <div class="bg-white rounded my-3 px-4 py-5 w-100">
+    <div class="d-flex justify-content-between flex-wrap mb-5">
+      <div class="form-group has-search rounded w-300px">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control left-right-top-border-none shadow-none text-muted" placeholder="Search">
+      </div>
+      <div>
+        <button type="button" class="btn {{curTable===1?'btn-primary':'btn-light text-muted'}}"
+          (click)="switchTable(1)">Tous</button>
+        <button type="button" class="btn {{curTable===2?'btn-primary':'btn-light text-muted'}}"
+          (click)="switchTable(2)">Evaluées</button>
+        <button type="button" class="btn {{curTable===3?'btn-primary':'btn-light text-muted'}}"
+          (click)="switchTable(3)">Non-evaluées</button>
+      </div>
+    </div>
+
+    <table class="table border-top-0">
+      <thead>
+        <tr>
+          <th scope="col" class="border-top-0 font-size-14 border-bottom-1">Classement <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+          <th scope="col" class="border-top-0 font-size-14 border-bottom-1">Note <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+          <th scope="col" class="border-top-0 font-size-14 border-bottom-1">Titre <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+          <th scope="col" class="border-top-0 font-size-1 border-bottom-1">Reportage <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+          <th scope="col" class="border-top-0 font-size-14 border-bottom-1">Institut <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+          <th scope="col" class="border-top-0 font-size-14 border-bottom-1">Direction provinciale <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+          <th scope="col" class="border-top-0 font-size-14 border-bottom-1">Type <i
+              class="fas fa-chevron-down font-size-8"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><span>1</span></th>
+          <td class="font-bold"><i class="fas fa-star text-warning"></i><span> 20/25</span></td>
+          <td><span>Lorem ipsum dolor sit amet.</span></td>
+          <td><span class="badge badge-yellow text-yellow">Photo</span></td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor.</td>
+          <td><span class="badge type-badge-college">Collége</span></td>
+          <td class="border-top-1 "><button class="btn bg-blue text-white"><i class="fas fa-align-left"></i> A
+              évaluer</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="font-bold"><i class="fas fa-star text-warning"></i><span> 20/25</span></td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td><span class="badge badge-green text-green">Ecrit</span></td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor.</td>
+          <td><span class="badge type-badge-lycee">Lycée</span></td>
+          <td><button class="btn bg-green text-white"><i class="far fa-check-circle"></i> Evaluée</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="font-bold"><i class="fas fa-star text-warning"></i><span> 20/25</span></td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td><span class="badge badge-blue text-blue">Vidéo</span></td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>Lorem ipsum dolor.</td>
+          <td><span class="badge type-badge-universite">Université</span></td>
+          <td><button class="btn bg-blue text-white"><i class="fas fa-align-left"></i> A évaluer</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <div class="row justify-content-center align-items-center mt-5 mb-3">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6">
+        <div class="d-flex justify-content-center justify-content-lg-end align-items-center mt-5 mb-3">
+          <div class="d-flex align-items-center mx-3">
+            <span class="mr-3 fw-500">Elements par page</span>
+            <span>
+              <select class="form-control left-right-top-border-none border-bottom-0 shadow-none fw-500">
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+              </select>
+            </span>
+          </div>
+          <div class="fw-500 mx-3"> 1-10 sur 32</div>
+          <div>
+            <span class="mx-2">
+              <span class="m-1"><i class="fas fa-arrow-alt-circle-left font-size-18"></i></span>
+              <span class="m-1"><i class="fas fa-arrow-left font-size-18"></i></span>
+            </span>
+            <span class="mx-2">
+              <span class="m-1 p-2 bg-light rounded-pill"><i class="fas fa-arrow-right font-size-18"></i></span>
+              <span class="m-1 p-2 bg-light rounded-pill"><i
+                  class="fas fa-arrow-alt-circle-right font-size-18"></i></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

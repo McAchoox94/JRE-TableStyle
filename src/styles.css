@@ -1,0 +1,139 @@
+body
+{
+  background-color: #f8f9fa;
+}
+.w-90
+{
+  width: 90%;
+}
+.contribution-box
+{
+  width: 200px;
+  height: 100px;
+  border-radius: 15px;
+  padding: 12px 20px 15px 25px;
+}
+
+@media screen and (max-width: 500px) {
+  .contribution-box
+  {
+    width: 130px;
+    height: 80px;
+  }
+  .custom-number
+  {
+    position: relative;
+    top: -160%;
+    left: 60%;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .w-90
+  {
+   width: 100%;
+  }
+}
+.bg-yellow
+{
+  background-color: #F7981B;
+}
+.text-yellow
+{
+  color: #F7981B;;
+}
+.bg-blue
+{
+  background-color: #1486CE;
+}
+.text-blue
+{
+  color: #1486CE;
+}
+.bg-green
+{
+  background-color: #1CB56D;
+}
+.text-green
+{
+  color: #1CB56D;
+}
+.font-bold
+{
+  font-weight: bold;
+}
+.fw-500
+{
+  font-weight: 500;
+}
+.left-right-top-border-none
+{
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+.w-300px
+{
+  width: 300px;
+}
+.font-size-18
+{
+  font-size: 18px;
+}
+.font-size-14
+{
+  font-size: 14px;
+}
+.font-size-10
+{
+  font-size: 10px;
+}
+.font-size-8
+{
+  font-size: 8px;
+}
+.font-size-6
+{
+  font-size: 6px;
+}
+.badge-yellow
+{
+  background-color: #ffefda;
+}
+.badge-blue
+{
+  background-color: #d3edff;
+}
+.badge-green
+{
+  background-color: #e0fff1;
+}
+table>tbody>tr:first-child> :last-child
+{
+  border-top: 1px solid #dee2e6 !important;
+}
+tbody>tr>td,tbody>tr>th{
+  height: 90px;
+  vertical-align: middle !important;
+  border-top: none !important;
+  border-bottom: 1px solid #dee2e6;
+}
+.type-badge-college
+{
+  color: #F861E7;
+  background-color: rgba(248, 97, 231, 0.2);
+}
+.type-badge-lycee
+{
+  color: #01ABB9;
+  background-color: rgba(1, 171, 185, 0.2);
+}
+.type-badge-universite
+{
+  color: #7F48FC;
+  background-color: rgba(127, 72, 252, 0.2);
+}
+.border-bottom-1
+{
+  border-bottom-width: 1px !important;
+}
